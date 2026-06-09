@@ -40,7 +40,7 @@ function Home() {
           <a href="mailto:rakshitapatil73@gmail.com"><Mail /></a>
         </div>
 
-        <a href="/resume.pdf" download className="btn">Download CV</a>
+        <a href="/GoogleDocs.pdf" download className="btn">Download CV</a>
       </div>
 
       <div className="hero-image">
