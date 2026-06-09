@@ -1,0 +1,112 @@
+/* Container styling */
+.experience-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* The vertical line container */
+.timeline {
+  position: relative;
+  border-left: 2px solid #e0e0e0; /* The vertical line */
+  margin-left: 20px;
+}
+
+/* Individual Job Item */
+.timeline-item {
+  margin-bottom: 40px;
+  padding-left: 40px; /* Space between line and text */
+  position: relative;
+}
+
+/* The Dot on the line */
+.timeline-dot {
+  position: absolute;
+  left: -9px; /* Centers dot on the 2px border */
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #007bff; /* Primary Color */
+  border: 3px solid #fff; /* White ring effect */
+  box-shadow: 0 0 0 2px #007bff; /* Outer ring */
+}
+
+/* Card Content Styling */
+.timeline-content {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.timeline-header h3 {
+  margin: 0;
+  color: #222;
+  font-size: 1.25rem;
+}
+
+.company-name {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-top: 4px;
+}
+
+.timeline-date {
+  display: block;
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.timeline-description {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Skill Badges */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-badge {
+  background-color: #e3f2fd;
+  color: #007bff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .timeline {
+    margin-left: 10px;
+  }
+  .timeline-item {
+    padding-left: 30px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+}

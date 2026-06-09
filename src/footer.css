@@ -1,0 +1,90 @@
+/* --- Footer Styling --- */
+.footer {
+  background-color: #0f172a; /* Dark background */
+  border-top: 1px solid #1e293b;
+  padding: 1.5rem 10%;
+  margin-top: 0; 
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Spreads items apart */
+  align-items: center; /* Vertically centers items */
+  width: 100%;
+}
+
+/* 1. LEFT: Social Icons */
+.footer-socials {
+  flex: 1; /* Takes up 1/3 of the space */
+  display: flex;
+  justify-content: flex-start; /* Aligns to the left */
+  gap: 1.5rem;
+}
+
+.footer-socials a {
+  color: #94a3b8;
+  transition: 0.3s;
+  display: inline-flex;
+}
+
+.footer-socials a:hover {
+  color: #38bdf8; /* Neon Blue Hover */
+  transform: translateY(-3px);
+}
+
+/* 2. MIDDLE: Copyright Text */
+.footer-text {
+  flex: 1; /* Takes up 1/3 of the space */
+  text-align: center; /* Centers the text perfectly */
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0;
+  white-space: nowrap; /* Prevents text from breaking into 2 lines */
+}
+
+.footer-text span {
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+/* 3. RIGHT: Scroll Top Button */
+.scroll-top {
+  flex: 1; /* Takes up 1/3 of the space */
+  display: flex;
+  justify-content: flex-end; /* Aligns to the right */
+}
+
+.scroll-top a {
+  background: #1e293b;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #38bdf8;
+}
+
+.scroll-top a:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+/* --- Mobile Responsiveness --- */
+/* On phones, stack them so they aren't squished */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack them vertically */
+    gap: 1.5rem;
+  }
+  
+  .footer-socials {
+    justify-content: center; /* Center icons on mobile */
+  }
+  
+  .scroll-top {
+    justify-content: center; /* Center button on mobile */
+  }
+}
